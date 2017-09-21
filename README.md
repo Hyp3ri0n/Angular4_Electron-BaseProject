@@ -56,7 +56,6 @@ You have to launch the watchers to build and "watch" your project on a console :
 
 And finally, on another console, you can launch the application in electron and start coding :
 > npm run electron:start  
-*if nothing appears on the web browser, just refresh your page*
 
 ## 5 - Tips
 
