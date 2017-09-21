@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<!-- css -->
+		<link rel="stylesheet" href="assets/styles/materialize.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/styles/font-awesome.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/styles/styleFont.css" type="text/css" media="all">
+		<link rel="stylesheet" href="assets/styles/style.css" type="text/css" media="all">
+
+		<!-- js -->
+	    <!-- libs from npm -->
+	    <script type="text/javascript" src="assets/vendors/libs/core-js/client/shim.min.js"></script>
+	    <script type="text/javascript" src="assets/vendors/libs/zone.js/dist/zone.min.js"></script>
+	    <script type="text/javascript" src="assets/vendors/libs/reflect-metadata/Reflect.js"></script>
+	    <script type="text/javascript" src="assets/vendors/libs/systemjs/dist/system.src.js"></script>
+	    <script type="text/javascript" src="assets/vendors/libs/hammerjs/hammer.min.js"></script>
+	    <script type="text/javascript" src="assets/vendors/libs/materialize-css/dist/js/materialize.min.js"></script>
+
+	    <!-- SystemJS configuration -->
+	    <script type="text/javascript" src="assets/vendors/systemjs.config.js"></script>
+	    <script type="text/javascript">
+			System.set('electron', System.newModule(require('electron')));
+	        System.import('app').catch(function(err) { console.error(err); });
+    	</script>
+
+	</head>
+	<body>
+		<app-root></app-root>
+	</body>
+</html>
