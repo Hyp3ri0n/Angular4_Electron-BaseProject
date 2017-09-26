@@ -16,7 +16,7 @@ app.on('window-all-closed', function () {
 });
 
 const createWindowApp = () => {
-  mainWindow = new BrowserWindow({ width: 1200, height: 900, frame: false, show: false });
+  mainWindow = new BrowserWindow({ width: 1200, height: 900, frame: true, show: false });
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   mainWindow.webContents.openDevTools();
